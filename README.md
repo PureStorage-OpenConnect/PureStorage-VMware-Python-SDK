@@ -1,6 +1,10 @@
-# Pure Storage VMware Python SDK
+<!-- wp:heading -->
+<h2>Pure Storage VMware Python SDK</h2>
+<!-- /wp:heading -->
 
-In an effort to bring more options for VMware and Pure Storage integration this SDK is actively being developed to implement common tasks requested by end-users.
+<!-- wp:paragraph -->
+<p>In an effort to bring more options for VMware and Pure Storage end-users this SDK will implement common tasks and workflows used between the two vendors.</p>
+<!-- wp:paragraph -->
 
 _To report issues or request new features, please enter them here:_
 
