@@ -1,0 +1,2 @@
+purestorage >= 1.18.0
+pyvmomi >= 6.7.3
