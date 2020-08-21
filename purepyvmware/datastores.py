@@ -211,8 +211,8 @@ class VvolDatastores(Datastores):
             else:
                 for endpoint in existing_protocol_endpoints:
                     if endpoint['name'] == protocol_endpoint_name:
-                        raise ValueError(f'"{protocol_endpoint_name}" already exists. Cancelling creation of vVol \
-                                         datastore.')
+                        raise ValueError(f'"{protocol_endpoint_name}" already exists. Cancelling creation of vVol'
+                                         f' datastore.')
                     else:
                         fa_protocol_endpoint = self.flasharray.create_conglomerate_volume(protocol_endpoint_name)
                         self.flasharray.connect_hgroup(hgroup, fa_protocol_endpoint['name'])
