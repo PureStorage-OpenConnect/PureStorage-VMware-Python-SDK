@@ -142,7 +142,7 @@ class VmfsDatastores(Datastores):
                 - If no connected ESXi hosts are found within the cluster.
                 - If disk device is not found on ESXi host.
         """
-        hgroup, connected_esxi_hosts = self.verify_vsphere_cluster(cluster_name, self.flasharray)
+        hgroup, connected_esxi_hosts = self.verify_vsphere_cluster(cluster_name)
 
         if connected_esxi_hosts:
             esxi_host = connected_esxi_hosts[0]
@@ -201,7 +201,7 @@ class VvolDatastores(Datastores):
         if not protocol_endpoint_name:
             protocol_endpoint_name = 'pure-protocol-endpoint'
 
-        hgroup, connected_esxi_hosts = self.verify_vsphere_cluster(cluster_name, self.flasharray)
+        hgroup, connected_esxi_hosts = self.verify_vsphere_cluster(cluster_name)
         existing_protocol_endpoints = self.flasharray.list_volumes(protocol_endpoint=True)
 
         if connected_esxi_hosts:
