@@ -2,7 +2,7 @@
 
 import time
 
-from lib import datastore_utils
+from purepyvmware.lib import datastore_utils
 from pyVmomi import vim
 from pyVmomi import sms
 
