@@ -38,10 +38,10 @@ class BaseConnector(object):
             vcenter_passwd (str): Password for vCenter authenticated user.
             verify_ssl (bool): Whether or not the session should be verified.
         """
-        self.fa_instance = self.connect_purestorage_fa(self, fa_ip, fa_usr, fa_passwd, api_token, verify_ssl)
-        self.vc_instance = self.connect_vsphere_env(self, vcenter_ip, vcenter_usr, vcenter_passwd, verify_ssl)
+        self.fa_instance = self.connect_purestorage_fa(fa_ip, fa_usr, fa_passwd, api_token, verify_ssl)
+        self.vc_instance = self.connect_vsphere_env(vcenter_ip, vcenter_usr, vcenter_passwd, verify_ssl)
         self.vsphere_content = self.get_env_content(self.vc_instance)
-        self.sms_instance = self.connect_sms_env(self, vcenter_ip)
+        self.sms_instance = self.connect_sms_env(vcenter_ip)
 
     def connect_purestorage_fa(self, target, username, password=None, api_token=None, verify_https=True):
         """Create a session (verified or unverified) with the requested FlashArray.
