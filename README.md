@@ -22,7 +22,7 @@ $ python3 -m pip install purepyvmware
 ```
 $ git clone https://github.com/PureStorage-OpenConnect/PureStorage-VMware-Python-SDK.git
 $ cd PureStorage-VMware-Python-SDK
-$ pip install -r requirements.txt
+$ python3 -m pip install -r requirements.txt
 $ python setup.py install
 ```
 
