@@ -15,7 +15,7 @@ The library requires Python 3.6 and higher. Third-party libraries are also requi
 ### pip Installation
 For Python >= 3.6:
 ```
-$ pip3 install purepyvmware
+$ python3 -m pip install purepyvmware
 ```
 
 ### Manual Installation
